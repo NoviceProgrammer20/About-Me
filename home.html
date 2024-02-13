@@ -13,22 +13,51 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
+    <style>
+      .purple{
+        background-color: #9d2fad;
+      }
+      .ocean-bg {
+        background-image: url('ocean_bg.jpg'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;/* Adjust the height as needed */
+        color: white; /* Text color on the background image */
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
 </head>
-<body>
-    <div class = "container pt-5 p-5 my-5 bg-dark text-white">
-        <h1 class = "display-1 text-center">About Me</h1>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Extra</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
     </div>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Extra</a>
-        </li>
-    </ul>
-    <img src = "DSCF0967.jpg" class="rounded-circle float-start img-fluid mx-auto d-block" alt = "Me"> 
+  </nav>
+    <div id="section1" class = "ocean-bg">
+        <p class = "display-1 fw-bold"><kbd>My Webpage</kbd></p>
+    </div>
+    
+    <div id="section2">
+      <img src = "DSCF0967.jpg" class="rounded-circle float-start img-fluid mx-auto d-block" alt = "Me">
+    </div>
+     
 </body>
 </html>
